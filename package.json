@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "EA utils.",
   "bin": {
-    "es-utils": "bin/es-utils"
+    "es-utils": "bin/ea-utils"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
