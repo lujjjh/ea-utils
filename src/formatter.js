@@ -1,7 +1,7 @@
 class JsonFormatter {
   static stringify(object, options) {
     options = {
-      space: options.prettify ? '    ' : null
+      space: (options && options.prettify) ? '    ' : null
     }
     return JSON.stringify(object, null, options.space)
   }
