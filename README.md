@@ -15,3 +15,17 @@ EA utilities.
     
     Options:
       -h, --help  Show help                                                [boolean]
+
+### students:load
+    Options:
+      -f, --file             Load a file                                  [required]
+      --outputFormat         Output format              [required] [default: "json"]
+      --outputFormatOptions  Options for formatter                     [default: []]
+      -h, --help             Show help                                     [boolean]
+
+### students:list
+    Options:
+      --inputFormat          Input format               [required] [default: "json"]
+      --outputFormat         Output format (json or sql)           [default: "json"]
+      --outputFormatOptions  Options for formatter                     [default: []]
+      -h, --help             Show help                                     [boolean]
