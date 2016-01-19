@@ -1,0 +1,29 @@
+{
+  "name": "ea-utils",
+  "version": "1.0.0",
+  "description": "EA utils.",
+  "bin": {
+    "es-utils": "bin/es-utils"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js"
+  },
+  "author": "lujjjh",
+  "private": true,
+  "dependencies": {
+    "babel-plugin-transform-strict-mode": "^6.3.13",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-register": "^6.4.3",
+    "excel": "^0.1.4",
+    "squel": "^4.2.2",
+    "winston": "^2.1.1",
+    "xlsx": "^0.8.0",
+    "yargs": "^3.32.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6"
+  }
+}
