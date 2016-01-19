@@ -1,4 +1,6 @@
 # ea-utils
+[![Build Status](https://travis-ci.org/lujjjh/ea-utils.svg?branch=master)](https://travis-ci.org/lujjjh/ea-utils)
+
 EA utilities.
 
 ## Installation
