@@ -23,10 +23,10 @@ export default class {
     let workbook = xlsx.readFile(argv.file)
 
     /* filter sheet names */
-    const sheetNames = workbook.SheetNames.filter((name) => /^[\dA-Z]{8}./.test(name))
+    const sheetNames = workbook.SheetNames.filter(name => /^[\dA-Z]{8}./.test(name))
 
     /* process for each worksheet */
-    const result = sheetNames.map((name) => {
+    const result = sheetNames.map(name => {
       let sheet = workbook.Sheets[name]
       const rows = xlsx.utils.sheet_to_row_object_array(sheet)
       return {
@@ -34,7 +34,7 @@ export default class {
           number: name.substring(0, 7),
           name: name.substring(8).replace(/^\s+|\s+$/, '')
         },
-        students: rows.map((row) => ({
+        students: rows.map(row => ({
           number: row['F_ZKZNumber'].substring(2),
           name: row['F_StuName'],
           sex: row['F_StuSex'].indexOf('男') !== -1 ? 0 : 1,
